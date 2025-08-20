@@ -1,36 +1,85 @@
-# Space Invaders
+🎯 ゲーム概要
 
-![Logo](https://i.ytimg.com/vi/k9oyDTR0EwQ/maxresdefault.jpg "Space Invaders")
+FM-Invaders は、Fusion Mind株式会社が開発したクラシックアーケード風シューティングゲームです。
+1978年に登場した「Space Invaders」から着想を得ており、敵の侵攻を阻止しながらスコアを競うシンプルかつ奥深いゲームプレイを提供します。
 
-## Rules of the Game
-Space Invaders is the classic single-player arcade game introduced in 1978. The objective of my version is to make it through 3 levels of increasing difficulty while avoiding getting hit by enemy bullets and preventing the enemies from reaching the bottom of the screen. Difficulty between levels increases by having enemies become faster and take more hits in order to die.
+全3ステージ構成で、進むごとに難易度が上昇
 
-## Controls
-Players use the left and right arrow keys to move their ship and the spacebar to shoot. When prompted, the player can press the Enter key to restart the game.
+敵はスピードアップし、複数回の攻撃でしか倒せない強化タイプも登場
 
-## Technologies
-HTML5, CSS, and JavaScript were used to create the website. Canvas was used to render the graphics and run the game.
+弾を避けつつ、画面下まで到達されないように防衛
 
-## Approach/Process
-After creating the wireframe, I started just playing around with Canvas and piecing together how to accomplish the features listed in my user stories. I first learned how to draw on the canvas and create a figure. Drawing the figure turned to figuring out how to move it around, which turned to figuring out how to move it around with keydown events, etc. So I just tried to learn how to accomplish one of the user stories and build off the knowledge for the following ones I approached.
+🎮 操作方法
 
-To help with the creation of the objects needed for the game and make the game easier to scale, I used classes from ES6 to make the game more object oriented, storing properties like the coordinates, width, height, along with functions to draw and update the objects on the canvas. This, along with using functions to create new levels that draw the enemies and set the enemy speeds, makes it easy for me to not only create new characters/enemies, but also easily add levels.
+⬅️ ➡️ カーソルキー：自機の移動
 
-After finishing the basics of the game that followed the user stories, I created a list of features that I thought would make the game more interesting and more fleshed out, such as a score counter, multiple lives, difficulty adjustments, sprites and animations, background animations, sound effects, and more.
+␣ スペースキー：弾を発射
 
-## Wireframe
-![wireframeImg](https://github.com/yojoecool/SpaceInvaders/blob/master/docs/wireframe.png "Wireframe")
+↩️ Enterキー：ゲームリスタート
 
-## Biggest challenges and wins
-The biggest challenge was probably learning Canvas in the first place since I had never used anything like that before. Along with learning Canvas, making sure I kept my scope realistic and avoiding feature creep given the limited time to work on the project was also a challenge. 
+🛠️ 使用技術
 
-My biggest win was getting things animated smoothly with the controls being responsive. I didn't originally plan to use the animation loop I ended up with to constantly redraw the image on the screen, but deciding to go in that direction made things a lot smoother.
+HTML5 / CSS3 / JavaScript
 
-## Bugs
-None that I know of
+Canvas API による描画・アニメーション処理
 
-## Future Features
-More levels, bosses, high scores, touch-screen controls
+オブジェクト指向設計（ES6クラス利用）による拡張性の高いコード設計
 
-## User Stories
-https://trello.com/b/sCXykRc4/space-invaders
+🧩 開発プロセス
+
+初期段階では Canvas の基礎描画を習得し、自機・敵の生成と移動処理を構築
+
+キーボードイベントにより操作可能なコントロールを実装
+
+レベル生成関数を用いて、敵の配置・スピード調整を柔軟に管理
+
+オブジェクト指向のアプローチで、新規キャラクターやレベル追加が容易な設計を採用
+
+🌟 主な機能
+
+スコア表示
+
+複数ライフ制
+
+レベルごとの難易度調整
+
+スプライト＆アニメーション
+
+サウンドエフェクト対応
+
+🖼️ ワイヤーフレーム
+
+💡 課題と成果
+
+課題
+
+初めての Canvas API 実装での学習曲線
+
+短期間でのスコープ管理（機能追加の取捨選択）
+
+成果
+
+スムーズなアニメーションと快適な操作性を実現
+
+常時リフレッシュする描画ループにより、高いパフォーマンスを達成
+
+🐞 既知のバグ
+
+現在、重大な不具合は確認されていません。
+
+🔮 今後の追加予定
+
+ボスキャラクターの導入
+
+ステージ数の拡張
+
+ハイスコア保存機能
+
+スマートフォン（タッチ操作）対応
+
+👨‍💻 開発元
+
+Fusion Mind株式会社
+AI・DXを活用したシステム開発およびエンターテインメントコンテンツ制作を行っています。
+
+👉 公開ページ: FM-Invaders (GitHub Pages)
